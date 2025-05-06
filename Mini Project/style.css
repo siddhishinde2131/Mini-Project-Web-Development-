@@ -1,0 +1,202 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #fff0f5; /* Light pink pastel */
+    color: #4b2c2c;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    background-color: #ffe6f0; /* Soft pink */
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  
+  header h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.8rem;
+    color: #d63384;
+  }
+  
+  nav {
+    margin-top: 1rem;
+  }
+  
+  nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #d63384;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #ff69b4;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: #ffeefc;
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+  
+  .hero h2 {
+    font-size: 2rem;
+    color: #b03060;
+  }
+  
+  .hero p {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    background: #ffb6c1;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background: #ff69b4;
+  }
+  
+  /* Sweet Picks Section */
+  .picks, .favorites {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .picks h3, .favorites h3 {
+    font-size: 1.8rem;
+    color: #c71585;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Cupcake Cards */
+  .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem 0;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 20px;
+    padding: 1rem;
+    width: 220px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+  }
+  
+  .card h4 {
+    color: #d63384;
+    font-size: 1.2rem;
+  }
+  
+  .card p {
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+  /* Favorites Section */
+  .favorites p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #6b4e4e;
+  }
+  
+  /* Contact Form */
+  .contact-form {
+    max-width: 400px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 0.8rem;
+    border-radius: 10px;
+    border: 1px solid #ffb6c1;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    background-color: #fffafc;
+  }
+  
+  .contact-form textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  .contact-form button {
+    background: #ffb6c1;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 0.8rem 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background: #ff69b4;
+  }
+  
+  /* Footer */
+  footer {
+    background: #ffe6f0;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #7a4d4d;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    nav a {
+      display: block;
+      margin: 0.5rem 0;
+    }
+  
+    .cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 80%;
+    }
+  }
+  
