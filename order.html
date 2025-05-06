@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Cupcakes</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #f9f9f9, #d4bdbd);
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #5a189a;
+      text-align: center;
+      font-size: 2.8rem;
+    }
+
+    h2 {
+      color: #0077b6;
+      text-align: center;
+      font-size: 1.5rem;
+      margin-top: -10px;
+    }
+
+    .order-form {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .order-form label {
+      font-size: 1.2rem;
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    .order-form input, .order-form select, .order-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    .order-form button {
+      background-color: #5a189a;
+      color: #fff;
+      padding: 12px 20px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      transition: background-color 0.3s ease;
+    }
+
+    .order-form button:hover {
+      background-color: #9b4d96;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Order Your Cupcakes</h1>
+  <h2>Choose your flavors and enter your details</h2>
+
+  <div class="order-form">
+    <form action="#" method="post">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+      <label for="cupcake-flavor">Choose a Cupcake Flavor</label>
+      <select id="cupcake-flavor" name="flavor" required>
+        <option value="strawberry">Strawberry Dream</option>
+        <option value="chocolate">Choco Bliss</option>
+        <option value="vanilla">Vanilla Sky</option>
+        <option value="lemon">Sunny Lemon</option>
+      </select>
+
+      <label for="quantity">Quantity</label>
+      <input type="number" id="quantity" name="quantity" required min="1" max="10" placeholder="Enter quantity">
+
+      <label for="message">Special Requests</label>
+      <textarea id="message" name="message" rows="4" placeholder="Add any special requests here..."></textarea>
+
+      <button type="submit">Place Order</button>
+    </form>
+  </div>
+
+  <footer>
+    Made with ❤️ Siddhi
+  </footer>
+
+</body>
+</html>
